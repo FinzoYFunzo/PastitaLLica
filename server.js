@@ -39,8 +39,9 @@ client.on('message', message =>{
 });
 // mensajes sin prefijo
 client.on('message', message =>{
-  if(!message.content.startsWith('wenapo')) {
+  if(message.content.startsWith('wenapo')) {
     message.channel.send('Vieja culia maraca');
+    
   }
 })
 // -----------------------------------------
